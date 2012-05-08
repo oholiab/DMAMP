@@ -20,7 +20,7 @@ module DMAMP
       end
       op.parse!
       raise OptionParser::MissingArgument unless ARGV[0]
-      options[:modulename] = ARGV[0]
+      @@options[:modulename] = ARGV[0]
     rescue OptionParser::MissingArgument
       puts op
       abort "Arguments required"
