@@ -10,6 +10,7 @@ class MODNAME::params {
           $user         = 'root'
           $group        = 'root'
           #ADDITIONALPARAMS
+          #$PARAM       = 'value'
         }
         default:{
           fail("Release $::lsbdistcodename not supported")

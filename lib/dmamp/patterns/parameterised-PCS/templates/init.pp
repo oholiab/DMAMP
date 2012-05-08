@@ -6,6 +6,7 @@ class MODNAME (
   $user        = $MODNAME::params::user,
   $group       = $MODNAME::params::group,
   #ADDITIONALPARAMS
+  #$PARAM       = $MODNAME::params::PARAM,
 ) inherits MODNAME::params {
   anchor {'MODNAME::start':}->
   class { 'MODNAME::package':}~>
