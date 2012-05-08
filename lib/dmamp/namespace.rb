@@ -17,7 +17,15 @@ module DMAMP
         target = File.open(dir + "/" + m, 'a')
         puts @pattern.templatedir + "/" + m, 'r'
         File.open(@pattern.templatedir + "/" + m, 'r').each_line do |s|
-          target.write s.gsub(/MODNAME/, @modname)
+          if s.sub!(/#\$PARAM/, '$PARAM')
+            @@options[:parameters].each do |p|
+              temp = s.gsub(/PARAM/, p)
+              temp.gsub!(/MODNAME/, @modname)
+              target.write temp
+            end
+          else
+            target.write s.gsub(/MODNAME/, @modname)
+          end
         end
         target.close
       end
