@@ -1,8 +1,8 @@
 module DMAMP
   class Mod
-    def initialize
-      @@options = Opts.options
-      @pattern = DMAMP.pattern
+    def initialize(options)
+      @@options = options
+      @pattern = DMAMP.pattern(options[:pattern])
       @modname = @@options[:modulename]
       self.build
     end

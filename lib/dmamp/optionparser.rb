@@ -1,4 +1,3 @@
-require 'optparse'
 
 module DMAMP
   class Opts
