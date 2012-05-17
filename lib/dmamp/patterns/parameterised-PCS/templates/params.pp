@@ -3,8 +3,8 @@ class MODNAME::params {
     'Debian':{
       case $::lsbdistcodename {
         'squeeze':{
-          $package      = 'ssh'
-          $service      = 'ssh'
+          $package      = 'MODNAME'
+          $service      = 'MODNAME'
           $config_dir   = '/etc/MODNAME'
           $config_file  = "$config_dir/MODNAME_config"
           $user         = 'root'

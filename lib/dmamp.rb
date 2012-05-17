@@ -1,7 +1,7 @@
 require 'singleton'
 require 'optparse'
 require 'dmamp/optionparser'
-require 'dmamp/namespace'
+require 'dmamp/mod'
 require 'dmamp/pattern'
 
-DMAMP::Mod.new(DMAMP::Opts.options)
+DMAMP::Mod.new(DMAMP::options)
