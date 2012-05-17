@@ -1,37 +1,42 @@
-require 'optparse'
+require 'dmamp/defaultargs'
 
 module DMAMP
+  # Option parsing class, all options available via
+  # the options accessor.
   class Opts
-    include Singleton
+    # Parsed option hash
+    attr_accessor :options
 
-    @@defaults = {:pattern => "parameterised-PCS",
-                  :parameters  => nil,
-    }
-    def self.instance
-      @__instance__ ||= new
-    end
+    # Parses options from ARGV
     def initialize
-      @@options = @@defaults
+      @options = DEFAULTARGS
       op = OptionParser.new do |opts|
         opts.banner = "Usage: dmamp [options] MODULENAME"
   
         opts.on("-p", "--parameters [PARAMS]", String, "Comma seperated list of additional parameter names (default is none)") do |p|
-          @@options[:parameters] = p.gsub(/ /, "").split(",") if p
+          @options[:parameters] = p.gsub(/ /, "").split(",") if p
         end
         opts.on("-P", "--pattern [PATTERN]", String, "Module pattern to used (defaults to parameterised-PCS)") do |p|
-          @@options[:pattern] = p if p
+          @options[:pattern] = p if p
         end
+        opts.on("-v", "--version") do |v|
+          if v
+            puts VERSION
+            exit 0
+          end
+        end
+
       end
       op.parse!
       raise OptionParser::MissingArgument unless ARGV[0]
-      @@options[:modulename] = ARGV[0]
+      @options[:modulename] = ARGV[0]
     rescue OptionParser::MissingArgument
       puts op
       abort "Arguments required"
     end
-    def self.options
-      self.instance
-      return @@options
-    end
+  end
+  # Create and return option hash from DMAMP::Opts
+  def self.options
+    Opts.new.options
   end
 end
