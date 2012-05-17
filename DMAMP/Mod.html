@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class DMAMP::Mod - Dmamp</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/dmamp/mod.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-build">#build</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../CHANGELOG.html">CHANGELOG</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../DMAMP.html">DMAMP</a>
+  
+    <li><a href="../DMAMP/Mod.html">DMAMP::Mod</a>
+  
+    <li><a href="../DMAMP/Opts.html">DMAMP::Opts</a>
+  
+    <li><a href="../DMAMP/Pattern.html">DMAMP::Pattern</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class DMAMP::Mod</h1>
+
+  <div id="description" class="description">
+    
+<p>Umbrella class that gets the pattern and builds upon instantiation.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-modname" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">modname</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The name of the new module</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-options" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">options</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The option hash</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-pattern" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">pattern</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The pattern that the created module is using</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(options)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Instatiates, gathers pattern metadata and then calls self.build to create
+the new module. <code>options</code> - optparser option hash.</p>
+
+<h4 id="method-c-new-label-Options">Options</h4>
+
+<p>Must contain at least entries for keys</p>
+<ul><li>
+<p>:pattern</p>
+</li><li>
+<p>:modulename</p>
+</li></ul>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/dmamp/mod.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-ivar">@options</span> = <span class="ruby-identifier">options</span>
+  <span class="ruby-ivar">@pattern</span> = <span class="ruby-constant">DMAMP</span>.<span class="ruby-identifier">pattern</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:pattern</span>])
+  <span class="ruby-ivar">@modname</span> = <span class="ruby-ivar">@options</span>[<span class="ruby-value">:modulename</span>]
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">build</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-build" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">build</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Tests whether module directory exists, then  writes in files from template
+replacing placeholder variables and inserting extra parameters based on the
+template formatting. Quite literally builds the new module.</p>
+
+<p>Will abort (gracefully) if the target directory already exists.</p>
+          
+
+          
+          <div class="method-source-code" id="build-source">
+            <pre><span class="ruby-comment"># File lib/dmamp/mod.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">build</span>
+  <span class="ruby-identifier">dir</span> = <span class="ruby-constant">Dir</span><span class="ruby-operator">::</span><span class="ruby-identifier">pwd</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@modname</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">FileTest</span><span class="ruby-operator">::</span><span class="ruby-identifier">directory?</span>(<span class="ruby-identifier">dir</span>)
+    <span class="ruby-identifier">abort</span> <span class="ruby-ivar">@options</span>[<span class="ruby-value">:modulename</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot; directory already exists.&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-constant">Dir</span><span class="ruby-operator">::</span><span class="ruby-identifier">mkdir</span>(<span class="ruby-identifier">dir</span>)
+  <span class="ruby-ivar">@pattern</span>.<span class="ruby-identifier">manitemplates</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">m</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">target</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">dir</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span>, <span class="ruby-string">'a'</span>)
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-ivar">@pattern</span>.<span class="ruby-identifier">templatedir</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span>, <span class="ruby-string">'r'</span>).<span class="ruby-identifier">each_line</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+      <span class="ruby-comment"># Write in new parameters on appropriate lines if there are any</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">match</span>(<span class="ruby-node">%r#\$PARAM/</span>)
+        <span class="ruby-keyword">if</span> <span class="ruby-ivar">@options</span>[<span class="ruby-value">:parameters</span>]
+          <span class="ruby-ivar">@options</span>[<span class="ruby-value">:parameters</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">temp</span> = <span class="ruby-identifier">s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%rPARAM/</span>, <span class="ruby-identifier">p</span>)
+            <span class="ruby-identifier">temp</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%rMODNAME/</span>, <span class="ruby-ivar">@modname</span>)
+            <span class="ruby-identifier">temp</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-node">%r#/</span>, <span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-identifier">target</span>.<span class="ruby-identifier">write</span> <span class="ruby-identifier">temp</span>
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-comment">## Does not write template line if no params</span>
+          <span class="ruby-keyword">next</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-comment"># Otherwise just make sure the module name is correct</span>
+        <span class="ruby-identifier">target</span>.<span class="ruby-identifier">write</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%rMODNAME/</span>, <span class="ruby-ivar">@modname</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">target</span>.<span class="ruby-identifier">close</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EEXIST</span>
+  <span class="ruby-identifier">abort</span> <span class="ruby-ivar">@options</span>[<span class="ruby-value">:modulename</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot; directory already exists.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- build-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- build-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

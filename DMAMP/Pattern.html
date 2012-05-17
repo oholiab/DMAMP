@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class DMAMP::Pattern - Dmamp</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/dmamp/pattern.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">Singleton</span>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-instance">::instance</a>
+    
+    <li><a href="#method-c-new">::new</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../CHANGELOG.html">CHANGELOG</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../DMAMP.html">DMAMP</a>
+  
+    <li><a href="../DMAMP/Mod.html">DMAMP::Mod</a>
+  
+    <li><a href="../DMAMP/Opts.html">DMAMP::Opts</a>
+  
+    <li><a href="../DMAMP/Pattern.html">DMAMP::Pattern</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class DMAMP::Pattern</h1>
+
+  <div id="description" class="description">
+    
+<p>Helper for loading the appropriate metadata for the  given pattern by
+reading from the appropriate directories including readers for the pattern
+name, the templates and the templates directory.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="PATTERNDIR">PATTERNDIR
+        
+        <dd class="description"><p>Default pattern directory</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-manitemplates" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">manitemplates</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Manifest template filenames</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-name" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">name</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Module name</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-templatedir" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">templatedir</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Template directory (currently defined inline from default constant, no way
+of changing this from the command line yet… TODO)</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-instance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">instance</span><span
+            class="method-args">(name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return the instance of <a href="Pattern.html">Pattern</a> if it exists,
+else instantiate it</p>
+          
+
+          
+          <div class="method-source-code" id="instance-source">
+            <pre><span class="ruby-comment"># File lib/dmamp/pattern.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Pattern</span>.<span class="ruby-identifier">instance</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@instance</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- instance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- instance-method -->
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Instantiate pattern class and acquire metadata for pattern from the
+appropriate pattern’s template directory. Will abort if the name given
+does not match a pattern directory giving a list of known patterns.</p>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/dmamp/pattern.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@name</span> = <span class="ruby-ivar">@pattern</span> = <span class="ruby-identifier">name</span>
+  <span class="ruby-ivar">@templatedir</span> = <span class="ruby-node">&quot;#{PATTERNDIR}/#{@pattern}/templates&quot;</span>
+  <span class="ruby-ivar">@knownpatterns</span> = <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">entries</span>(<span class="ruby-constant">PATTERNDIR</span>).<span class="ruby-identifier">reject</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> [<span class="ruby-string">&quot;..&quot;</span>,<span class="ruby-string">&quot;.&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">x</span>)}
+  <span class="ruby-ivar">@manitemplates</span> = <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">entries</span>(<span class="ruby-identifier">templatedir</span>).<span class="ruby-identifier">reject</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> [<span class="ruby-string">&quot;..&quot;</span>,<span class="ruby-string">&quot;.&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">x</span>)}
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ENOENT</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+  <span class="ruby-identifier">abort</span> <span class="ruby-node">&quot;Pattern #{@pattern} is not defined within the patterns directory #{PATTERNDIR}
+  Known patterns are:
+  #{@knownpatterns.join(&quot;\n&quot;)}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

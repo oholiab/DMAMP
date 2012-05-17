@@ -1,0 +1,15 @@
+Thu, 17 May 2012 17:44:47 +0100
+lib/dmamp/defaultargs.rb	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp/patterns/parameterised-PCS/templates/package.pp	Wed, 09 May 2012 16:48:17 +0100
+CHANGELOG	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp/pattern.rb	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp/optionparser.rb	Thu, 17 May 2012 17:38:39 +0100
+README.md	Thu, 17 May 2012 17:38:33 +0100
+lib/dmamp/version.rb	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp/patterns/parameterised-PCS/templates/params.pp	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp.rb	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp/patterns/parameterised-PCS/templates/service.pp	Wed, 09 May 2012 16:48:17 +0100
+lib/dmamp/mod.rb	Thu, 17 May 2012 17:38:39 +0100
+lib/dmamp/patterns/parameterised-PCS/templates/init.pp	Wed, 09 May 2012 16:48:17 +0100
+lib/dmamp/patterns/parameterised-PCS/templates/config.pp	Wed, 09 May 2012 16:48:17 +0100
+bin/dmamp	Wed, 09 May 2012 16:48:17 +0100
