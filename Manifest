@@ -1,3 +1,4 @@
+CHANGELOG
 Manifest
 README.md
 Rakefile
@@ -12,6 +13,7 @@ lib/dmamp/patterns/parameterised-PCS/templates/init.pp
 lib/dmamp/patterns/parameterised-PCS/templates/package.pp
 lib/dmamp/patterns/parameterised-PCS/templates/params.pp
 lib/dmamp/patterns/parameterised-PCS/templates/service.pp
+lib/dmamp/version.rb
 spec/mod_spec.rb
 spec/opt_spec.rb
 spec/testcommon.rb
