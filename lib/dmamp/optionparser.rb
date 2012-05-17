@@ -19,6 +19,13 @@ module DMAMP
         opts.on("-P", "--pattern [PATTERN]", String, "Module pattern to used (defaults to parameterised-PCS)") do |p|
           @options[:pattern] = p if p
         end
+        opts.on("-v", "--version") do |v|
+          if v
+            puts VERSION
+            exit 0
+          end
+        end
+
       end
       op.parse!
       raise OptionParser::MissingArgument unless ARGV[0]
